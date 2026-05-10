@@ -1,0 +1,73 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.login-header h1 {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.login-header p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+}
+
+.login-options {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.login-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+  background: white;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.option-icon {
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+.login-option span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.login-option.individual .option-icon {
+  color: #4CAF50;
+}
+
+.login-option.rider .option-icon {
+  color: #FF9800;
+}
+
+.login-option.admin .option-icon {
+  color: #2196F3;
+}
